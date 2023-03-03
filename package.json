@@ -1,10 +1,18 @@
 {
+  "name": "jps-notebook",
+  "version": "0.0.1",
+  "description": "The resulting notes out of curiosity and creation.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "repository": {
+    "type": "git",
+    "url":"git+https://github.com/Juan31416/jp-notebook.git"
+  },
+  "author": "Juan Pablo David Estrada Zarate <pi@juanpi.space",
   "dependencies": {
     "next": "^13.2.3",
     "nextra": "^2.2.17",
@@ -14,6 +22,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^18.14.6",
     "@types/react": "^18.0.28",
     "typescript": "^4.9.5"
   }
