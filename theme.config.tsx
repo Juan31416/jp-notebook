@@ -11,14 +11,14 @@ const config: DocsThemeConfig = {
       };
     }
   },
-  faviconGlyph: "⚆",
+  faviconGlyph: "☉",
   logo: (
     <span>
-      J<strong>π</strong>'s Notes
+      ☉ J<strong>π</strong>'s Notes
     </span>
   ),
   project: {
-    link: "https://github.com/Juan31416/jp-notebook",
+    link: "https://github.com/Juan31416/",
   },
   chat: {
     link: "https://twitter.com/juanpi_dez",
