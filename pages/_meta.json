@@ -1,4 +1,14 @@
 {
-  "index": "⚗️ About",
-  "coding": "🤖 Coding"
+  "index":{
+    "title":"🏠 Home",
+    "type": "page"
+  },
+    "notes":{
+    "title": "📓 Notes",
+    "type":"page"
+  },
+  "about":{
+    "title":"⚗️ About",
+    "type": "page"
+  }
 }
