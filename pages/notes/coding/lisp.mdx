@@ -1,0 +1,52 @@
+# Notes on Common Lisp
+
+SBCL is an open-source implementation that is delivered from Carnigie Mellon University. This is the version that I'm currently using.
+
+Resources:
+
+- [Cliki](https://www.cliki.net/)
+- [CMU Docs](https://www.cs.cmu.edu/Groups/AI/html/cltl/clm/clm.html)
+- [Gigamonkey Practical Lisp](https://gigamonkeys.com/book/)
+- [Alive Vscode Extension](https://marketplace.visualstudio.com/items?itemName=rheller.alive)
+
+## Concepts
+
+- **Read-Eval-Print Loop:** That endless cycle of reading, evaluating, and printing _(REPL)_.
+- **Self-evaluating object:** Which means that when given to the evaluator, the E in REPL, it evaluates to itself.
+- **List:** Anything in parenthesis.
+- **NIL:** Lisp's version of false and/or null.
+- **Functions:** Basic program building blocks in Lisp and can be defined with a _DEFUN_.
+- **FORMAT:** function is the most flexible way to standar output.
+- **T:** Means everything loaded correctly
+
+## Notes - Apr 11, 2023
+
+Lisp, in general, evaluates lists by treating the first element as the name of a function and the rest of the elements as expressions to be evaluated to yield the arguments to the function.
+
+_Strings_, like _numbers_, have a literal syntax that's understood by the Lisp reader and are self-evaluating objects.
+
+**FORMAT** function is the most flexible way to standar output.
+FORMAT takes a variable number of arguments, but the only two required arguments are the place to send the output and a string.
+If you pass t as its first argument, it sends its output to standard output.
+
+```clojure
+;HELLO WORLD VARIABLE
+"Hello, World!"
+```
+
+```clojure
+;FULL HELLO, WORLD PROGRAM
+(FORMAT t "Hello, World!")
+```
+
+```clojure
+;FULL HELLO, WORLD PROGRAM PACKED IN A FUNCTION
+(defun hello-world () (format t "hello, world"))
+
+;CALLING THE CREATED FUNCTION
+(hello-world)
+```
+
+> Debugging a program running on a $100M piece of hardware that is 100 million miles away is an interesting experience. Having a read-eval-print loop running on the spacecraft proved invaluable in finding and fixing the problem.
+
+[source](https://gigamonkeys.com/book/lather-rinse-repeat-a-tour-of-the-repl.html)
